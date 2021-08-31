@@ -1,6 +1,7 @@
 import React from "react";
-import {Card} from "react-bootstrap";
-import {Line} from "react-chartjs-2";
+import { Card } from "react-bootstrap";
+import { Line } from "react-chartjs-2";
+import PropTypes from "prop-types";
 
 
 function LineChart({
@@ -45,4 +46,8 @@ function LineChart({
     </>)
 }
 
+LineChart.propTypes = {
+    events: PropTypes.array,
+    event_type: PropTypes.string
+}
 export default LineChart;

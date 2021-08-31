@@ -1,6 +1,7 @@
 import React from "react";
-import {Card} from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import BootstrapTable from "react-bootstrap-table-next";
+import PropTypes from "prop-types";
 
 function Datatable({ events, ...props }){
 
@@ -33,6 +34,10 @@ function Datatable({ events, ...props }){
            />
        </Card>
    </>)
+}
+
+Datatable.propTypes = {
+    events: PropTypes.array
 }
 
 export default Datatable;

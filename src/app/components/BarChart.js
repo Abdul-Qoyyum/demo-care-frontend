@@ -1,7 +1,7 @@
 import React from 'react';
-import {Card} from "react-bootstrap";
-import {Bar} from "react-chartjs-2";
-
+import { Card } from "react-bootstrap";
+import { Bar } from "react-chartjs-2";
+import PropTypes from 'prop-types';
 
 function BarChart({
                       events,
@@ -47,5 +47,9 @@ function BarChart({
 
 }
 
+BarChart.propTypes = {
+    events: PropTypes.array,
+    event_type: PropTypes.string
+}
 
 export default BarChart;
